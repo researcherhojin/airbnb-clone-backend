@@ -37,6 +37,7 @@ DEBUG = DEBUG = "RENDER" not in os.environ
 
 ALLOWED_HOSTS = [
     "localhost",
+    "backend.airbnbclonetest.website",
 ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
@@ -195,8 +196,8 @@ if DEBUG:
     CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
 
 else:
-    CORS_ALLOWED_ORIGINS = ["https://airbnb-frontend-2zj1.onrender.com"]
-    CSRF_TRUSTED_ORIGINS = ["https://airbnb-frontend-2zj1.onrender.com"]
+    CORS_ALLOWED_ORIGINS = ["https://www.airbnbclonetest.website"]
+    CSRF_TRUSTED_ORIGINS = ["https://www.airbnbclonetest.website"]
 
 
 CORS_ALLOW_CREDENTIALS = True
